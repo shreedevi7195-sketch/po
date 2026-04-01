@@ -110,18 +110,8 @@ export default function Portfolio() {
   const [status, setStatus] = useState("");
 
   const sendEmail = (e) => {
-
     e.preventDefault();
     setLoading(true);
-
-    // emailjs.sendForm(
-    //   "YOUR_SERVICE_ID",
-    //   "YOUR_TEMPLATE_ID",
-    //   form.current,
-    //   "YOUR_PUBLIC_KEY"
-    // )
-
-    //service_bvch4fr - 
     emailjs.sendForm(
       "service_bvch4fr",
       "template_onb4hyh",
@@ -132,6 +122,10 @@ export default function Portfolio() {
         setStatus("success");
         setLoading(false);
         //e.target.reset();
+        setTimeout(() => {
+          form.current.reset();
+          setStatus("");
+        }, 2000);
       })
       .catch(() => {
         setStatus("error");
