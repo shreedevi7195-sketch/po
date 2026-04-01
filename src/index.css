@@ -109,4 +109,25 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }  */
-@import "tailwindcss";
+ @import "tailwindcss";
+
+ @keyframes gradientMove {
+   0% {
+     background-position: 0% 50%;
+   }
+
+   50% {
+     background-position: 100% 50%;
+   }
+
+   100% {
+     background-position: 0% 50%;
+   }
+ }
+
+ .animated-bg {
+   background: linear-gradient(-45deg, #020617, #1e293b, #334155, #1e3a8a);
+   background-size: 400% 400%;
+   animation: gradientMove 12s ease infinite;
+   backdrop-filter: blur(5px);
+ }

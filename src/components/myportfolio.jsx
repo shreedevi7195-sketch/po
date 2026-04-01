@@ -1,91 +1,73 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-};
+export default function PremiumPreview() {
+  const [pos, setPos] = useState({ x: 0, y: 0 });
 
-export default function myportfolio() {
+  useEffect(() => {
+    const move = (e) => setPos({ x: e.clientX, y: e.clientY });
+    window.addEventListener("mousemove", move);
+    return () => window.removeEventListener("mousemove", move);
+  }, []);
+
   return (
-    <div className="font-sans text-gray-800 scroll-smooth">
-      {/* Navbar */}
-      <nav className="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
-        <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
-          <h1 className="font-bold text-xl">Sridevi</h1>
-          <div className="space-x-6 hidden md:block">
-            <a href="#home" className="hover:text-indigo-600">Home</a>
-            <a href="#projects" className="hover:text-indigo-600">Projects</a>
-            <a href="#contact" className="hover:text-indigo-600">Contact</a>
-          </div>
+    <div className="relative min-h-screen overflow-hidden text-white flex items-center justify-center">
+
+      {/* 🌈 Animated Gradient */}
+      <div className="absolute inset-0 bg-[linear-gradient(-45deg,#020617,#1e293b,#334155,#1e3a8a)] animate-[gradientMove_12s_ease_infinite]"></div>
+
+      {/* 💎 Glass Overlay */}
+      <div className="absolute inset-0  bg-white/5"></div>
+
+      {/* 🧠 Mouse Glow */}
+      <div
+        className="pointer-events-none absolute  bg-blue-500 opacity-20 blur-[120px] rounded-full transition duration-200"
+        style={{
+          left: pos.x - 200,
+          top: pos.y - 200,
+        }}
+      ></div>
+
+      {/* 📦 Content */}
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8 p-10">
+
+        {/* 💎 Glass Card */}
+        <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition duration-300">
+          <h2 className="text-xl font-bold mb-2">Frontend</h2>
+          <p className="text-gray-300">React, Tailwind, Redux</p>
         </div>
-      </nav>
 
-      {/* Hero */}
-      <section id="home" className="h-screen flex flex-col justify-center items-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white text-center px-4">
-        <motion.h1 variants={fadeUp} initial="hidden" animate="show" className="text-5xl font-extrabold mb-4">
-          Hi, I'm Sridevi 👋
-        </motion.h1>
-        <motion.p variants={fadeUp} initial="hidden" animate="show" className="text-lg max-w-xl">
-          Full Stack Developer crafting modern, scalable and user-friendly web apps using React & .NET
-        </motion.p>
-
-        <motion.div variants={fadeUp} initial="hidden" animate="show" className="mt-8 flex gap-4">
-          <a href="#projects" className="bg-white text-black px-6 py-2 rounded-full shadow hover:scale-105 transition">View Work</a>
-          <a href="/resume.pdf" className="border px-6 py-2 rounded-full hover:bg-white hover:text-black transition">Resume</a>
-        </motion.div>
-      </section>
-
-      {/* Projects */}
-      <section id="projects" className="py-24 max-w-6xl mx-auto px-4">
-        <motion.h2 variants={fadeUp} initial="hidden" whileInView="show" className="text-4xl font-bold text-center mb-16">
-          Featured Projects
-        </motion.h2>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {[1,2,3].map((item) => (
-            <motion.div
-              key={item}
-              whileHover={{ y: -10 }}
-              className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition"
-            >
-              <h3 className="text-xl font-semibold mb-2">Project {item}</h3>
-              <p className="text-sm text-gray-600 mb-4">
-                Modern full-stack app with API integration and responsive UI
-              </p>
-              <div className="flex gap-4 text-sm">
-                <a href="#" className="text-indigo-600 font-medium">Live</a>
-                <a href="#" className="text-gray-500">GitHub</a>
-              </div>
-            </motion.div>
-          ))}
+        {/* 💎 Glass Card */}
+        <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-lg hover:shadow-purple-500/30 hover:scale-105 transition duration-300">
+          <h2 className="text-xl font-bold mb-2">Backend</h2>
+          <p className="text-gray-300">Node, .NET, APIs</p>
         </div>
-      </section>
 
-      {/* Contact */}
-      <section id="contact" className="py-24 bg-gray-50 px-4">
-        <motion.h2 variants={fadeUp} initial="hidden" whileInView="show" className="text-4xl font-bold text-center mb-12">
-          Get In Touch
-        </motion.h2>
-
-        <motion.form variants={fadeUp} initial="hidden" whileInView="show" className="max-w-xl mx-auto flex flex-col gap-4 bg-white p-8 rounded-2xl shadow-lg">
-          <input type="text" placeholder="Your Name" className="p-3 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-400" />
-          <input type="email" placeholder="Your Email" className="p-3 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-400" />
-          <textarea placeholder="Message" className="p-3 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-400" />
-          <button className="bg-indigo-600 text-white py-3 rounded hover:bg-indigo-700 transition">Send Message</button>
-        </motion.form>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-black text-white text-center py-8">
-        <p className="text-sm">© 2026 Sridevi Thangarasu | Full Stack Developer</p>
-        <div className="flex justify-center gap-6 mt-4 text-xl">
-          <a href="#"><FaGithub /></a>
-          <a href="#"><FaLinkedin /></a>
-          <a href="#"><FaEnvelope /></a>
+        {/* 💎 Glass Card */}
+        <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-lg hover:shadow-cyan-500/30 hover:scale-105 transition duration-300">
+          <h2 className="text-xl font-bold mb-2">Database</h2>
+          <p className="text-gray-300">SQL, MongoDB</p>
         </div>
-      </footer>
+
+        {/* 🔥 Neon Button */}
+        <div className="col-span-full flex justify-center mt-6">
+          <button className="px-8 py-3 rounded-full bg-blue-600 text-white shadow-lg shadow-blue-500/50 hover:shadow-blue-500/80 hover:scale-110 transition duration-300">
+            Hire Me 🚀
+          </button>
+        </div>
+
+      </div>
+
+      {/* 🎨 Animation Keyframe */}
+      <style>
+        {`
+          @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        `}
+      </style>
+
     </div>
   );
 }
