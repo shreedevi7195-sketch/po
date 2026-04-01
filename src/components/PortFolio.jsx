@@ -169,12 +169,16 @@ export default function Portfolio() {
           <motion.p initial="hidden" animate="visible" variants={fadeIn} className="mt-4">
             Senior Full Stack Developer with 9+ years of experience in designing, developing, and maintaining scalable web
             applications. Skilled in implementing role-based authentication systems, building admin portals,
-            developing online booking platforms, and troubleshooting production issues to ensure application
+            developing online booking platforms,cms websites and troubleshooting production issues to ensure application
             reliability and performance.
           </motion.p>
 
-          <motion.a href="/Sridevi_CV.pdf" download whileHover={{ scale: 1.1 }} className="mt-6 inline-block px-6 py-3 bg-white text-black rounded-lg">
-            Download Resume
+          <motion.a href="#projects" className="bg-white mt-6 mr-4 inline-flex text-black px-6 py-2 rounded-full shadow hover:scale-105 transition">
+            Projects
+          </motion.a>
+
+          <motion.a href="/Sridevi_CV.pdf" download className="bg-white mt-6 inline-flex text-black px-6 py-2 rounded-full shadow hover:scale-105 transition">
+            Resume
           </motion.a>
         </section>
 
@@ -195,7 +199,7 @@ export default function Portfolio() {
                   <div className="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
                     <span className="text-white font-bold">
                       <a href={p.live} target="_blank">
-                        View Project</a></span>
+                        View Live</a></span>
                   </div>
                 </div>
                 <div className="p-5">
@@ -226,7 +230,7 @@ export default function Portfolio() {
                   <div className="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
                     <span className="text-white font-bold">
                       <a href={p.live} target="_blank">
-                        View Project</a></span>
+                        View Live</a></span>
                   </div>
                 </div>
                 <div className="p-4">
@@ -252,7 +256,7 @@ export default function Portfolio() {
             whileInView={{ opacity: 1, scale: 1 }} className="max-w-4xl mx-auto backdrop-blur-lg p-8 rounded-2xl shadow-xl space-y-5">
 
             <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} className="text-3xl font-bold text-center mb-8">
-              Contact Me
+              Get In Touch
             </motion.h2>
 
             <input type="text" name="user_name" placeholder="Your Name" required
