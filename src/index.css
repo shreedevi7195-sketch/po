@@ -135,3 +135,9 @@ code {
    animation: gradientMove 12s ease infinite;
    backdrop-filter: blur(2px);
  }
+
+ .Toastify__toast-container {
+   width: 80vw !important;
+   padding: 10px  !important;
+   margin-left: 20px  !important;
+ }

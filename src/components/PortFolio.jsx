@@ -432,8 +432,8 @@ export default function Portfolio() {
                 Send your Message
               </button>
               {/* 🔥 Toast Container (Glass + Neon style) */}
-              <ToastContainer
-                position="bottom-right" autoClose={4000} theme="dark"
+              <ToastContainer md:w-md p-5  sm:w-3
+                position="bottom-right" autoClose={10000} theme="dark"
                 toastClassName="backdrop-blur-md bg-white/10 text-white border border-white/20 rounded-xl shadow-lg"
                 bodyClassName="text-sm font-medium"
               />
