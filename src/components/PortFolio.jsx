@@ -500,9 +500,9 @@ export default function Portfolio() {
           <div key={index} className="flex flex-1 flex-col items-center relative">
 
             {/* Dot */}
-            <div className="hidden md:flex w-5 h-5 bg-blue-500 rounded-full z-10 border-4 border-black">
-              {/* <h4 className="font-bold">{item.year}</h4> */}
-            </div>
+            {/* <div className="hidden md:flex w-5 h-5 bg-blue-500 rounded-full z-10 border-4 border-black">
+              
+            </div> */}
 
             {/* Card */}
             <div className="mt-6 text-white p-3 rounded-4xl shadow-lg w-55 text-center hover:shadow-blue-800/50 scale-105 transition bg-gradient-to-r  bg-white/10 via-gray-700 to-gray-800">
