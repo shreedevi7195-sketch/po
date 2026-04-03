@@ -343,7 +343,7 @@ export default function Portfolio() {
               { title: "Frontend", skills: ["HTML5", "CSS3", "Bootstrap", "Tailwindcss", "JavaScript (ES6+)", "React.js", "Redux Toolkit"] },
               { title: "Backend", skills: ["Node.js", "Express.js", "ASP.NET C#", "VB.NET", "MVC", "REST API", "PHP", "JWT Auth"] },
               { title: "Database", skills: ["SQL", "Mysql", "Mongoose"] },
-              { title: "Tools", skills: ["GitHub", "Jira", "AWS", "Postman", "Task Schedulers", "Console and desktop apps"] }
+              { title: "Tools", skills: ["GitHub", "Jira", "AWS", "Postman", "Schedulers", "ConsoleApps"] }
             ].map((category, i) => (
               <div key={i} className="bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-white transition duration-300 hover:scale-105">
                 <h3 className="font-semibold mb-4 text-white">{category.title}</h3>
@@ -365,7 +365,7 @@ export default function Portfolio() {
 
                       {/* Tools */}
                       {skill.includes("GitHub") && "🐙"} {skill.includes("Jira") && "📋"} {skill.includes("AWS") && "☁️"}
-                      {skill.includes("Postman") && "📮"} {skill.includes("Task") && "⏰"} {skill.includes("Console") && "💻"}{skill.includes("Desktop") && "🖥️"}
+                      {skill.includes("Postman") && "📮"} {skill.includes("Schedulers") && "⏰"} {skill.includes("Console") && "💻"}{skill.includes("Desktop") && "🖥️"}
                     </span>
 
                     <p className="text-sm text-gray-300 group-hover:text-white transition">
