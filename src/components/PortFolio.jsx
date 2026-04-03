@@ -224,6 +224,33 @@ const fadeIn = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
+const milestones = [
+  {
+    year: "2016",
+    title: "Mirrorminds Technology Solutions",
+    location: "Chennai",
+    desc: "Software Engineer Trainee"
+  },
+  {
+    year: "2019",
+    title: "Magna Electro Castings Pvt Ltd",
+    location: "Coimbatore",
+    desc: "Software Developer"
+  },
+  {
+    year: "2021",
+    title: "Benzy Infotech Pvt Ltd",
+    location: "Kochi",
+    desc: "Software Engineer"
+  },
+  {
+ year: "2024",
+   title: "Benzy Infotech Pvt Ltd",
+    location: "Kochi",
+    desc: "Senior Software Engineer"
+  }
+];
+
 export default function Portfolio() {
   //const featured = []; //projects.filter(p => p.featured);
   const exceptfeatured = projects.filter(p => p.excludefeatured);
@@ -441,18 +468,54 @@ export default function Portfolio() {
           </motion.h2>
 
           <motion.p initial="hidden" animate="visible" variants={fadeIn} className="mt-4 text-center p-4">
-            Senior Full Stack Developer with 9+ years of experience in designing, developing, and maintaining scalable web
+            Software Developer with 9+ years of experience in designing, developing, and maintaining scalable web
             applications. Skilled in implementing role-based authentication systems, building admin portals,
             developing online booking platforms,cms websites and troubleshooting production issues to ensure application
             reliability and performance.
           </motion.p>
-          <motion.a href="#projects" className="inline-flex bg-white/10 backdrop-blur-xl  mt-4 border border-white/20 rounded-full px-6 py-2 shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition duration-300">
+          {/* <motion.a href="#projects" className="inline-flex bg-white/10 backdrop-blur-xl  mt-4 border border-white/20 rounded-full px-6 py-2 shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition duration-300">
             Projects
           </motion.a>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <motion.a href="/Sridevi_CV.pdf" download className="inline-flex bg-white/10 backdrop-blur-xl  mt-4 border border-white/20 rounded-full px-6 py-2 shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition duration-300">
             Resume
+          </motion.a> */}
+
+          <div>
+        <div className="w-full overflow-x-auto py-5">
+          <div className="sm:grid-cols-1 md:flex items-center relative">
+
+        {/* Line */}
+        <div className="sm:hidden md:relative top-1/2 left-0 w-full h-1 bg-gray-700"></div>
+
+        {milestones.map((item, index) => (
+          <div key={index} className="flex flex-1 flex-col items-center relative">
+
+            {/* Dot */}
+            <div className="hidden md:flex w-5 h-5 bg-blue-500 rounded-full z-10 border-4 border-black">
+              {/* <h4 className="font-bold">{item.year}</h4> */}
+            </div>
+
+            {/* Card */}
+            <div className="mt-6 text-white p-4 rounded-4xl shadow-lg w-70 text-center hover:scale-105 transition bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+              <h3 className="font-bold">{item.year}</h3>
+              <p className="">{item.title}</p>
+              <p className="">{item.location}</p>
+              <p className="text-sm">{item.desc}</p>
+            </div>
+
+          </div>
+        ))}
+      </div>
+    </div>
+    <motion.a href="#projects" className="inline-flex bg-white/10 backdrop-blur-xl  mt-3 border border-white/20 rounded-full px-6 py-2 shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition duration-300">
+            Projects
           </motion.a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <motion.a href="/Sridevi_CV.pdf" download className="inline-flex bg-white/10 backdrop-blur-xl  mt-3 border border-white/20 rounded-full px-6 py-2 shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition duration-300">
+            Resume
+          </motion.a>
+          </div>
         </section>
 
         {/* Skills */}
@@ -539,17 +602,17 @@ export default function Portfolio() {
 
               {/* Name */}
               <input type="text" name="user_name" placeholder="Your Name" value={formData.user_name}
-                onChange={handleChange} className={`w-full p-2 rounded bg-white/20 text-white outline-none ${errors.user_name ? "border border-red-500" : ""}`} />
+                onChange={handleChange} className={`w-full p-2 rounded bg-white/20 text-white outline-none ${errors.user_name ? "border border-white-500" : ""}`} />
 
               {/* Email */}
               <input type="email" name="user_email" placeholder="Your Email" value={formData.user_email}
-                onChange={handleChange} className={`w-full p-2 rounded bg-white/20 text-white outline-none ${errors.user_email ? "border border-red-500" : ""}`} />
+                onChange={handleChange} className={`w-full p-2 rounded bg-white/20 text-white outline-none ${errors.user_email ? "border border-white-500" : ""}`} />
 
               {/* Message */}
               <textarea name="message" placeholder="Your Message" value={formData.message}
-                onChange={handleChange} className={`w-full p-2 rounded bg-white/20 text-white outline-none ${errors.message ? "border border-red-500" : ""}`} />
+                onChange={handleChange} className={`w-full p-2 rounded bg-white/20 text-white outline-none ${errors.message ? "border border-white-500" : ""}`} />
 
-              <button className="md:w-md p-5  bg-blue-800 hover:bg-green-900 transition text-white py-2 rounded-lg shadow-lg hover:scale-105">
+              <button className="md:w-md p-5  bg-purple-950 hover:bg-blue-900 transition text-white py-2 rounded-lg shadow-lg hover:scale-105">
                 Send your Message
               </button>
               {/* 🔥 Toast Container (Glass + Neon style) */}

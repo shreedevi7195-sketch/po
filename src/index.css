@@ -130,7 +130,8 @@ code {
 } */
 
  .animated-bg {
-   background: linear-gradient(-45deg, #040d34, #011432, #0a1f3d, #152245);
+   /* background: linear-gradient(-45deg, #040d34, #011432, #0a1f3d, #152245); */
+   background : linear-gradient(-45deg,#040d34, purple);
    background-size: 400% 400%;
    animation: gradientMove 12s ease infinite;
    backdrop-filter: blur(2px);
@@ -140,4 +141,12 @@ code {
    width: 80vw !important;
    padding: 10px  !important;
    margin-left: 20px  !important;
+   
  }
+ .Toastify__toast-theme--dark {
+background-color: purple !important; 
+}
+.Toastify__progress-bar-theme--dark
+{
+  background-color: white !important;
+}
