@@ -226,29 +226,37 @@ const fadeIn = {
 
 const milestones = [
   {
-    year: "2016",
-    title: "Mirrorminds Technology Solutions",
-    location: "Chennai",
-    desc: "Software Engineer Trainee"
+    year: "2026",
+    title: "A Job Seeker",
+    desc: "",
+    location: "in Banglore",
+    
   },
   {
-    year: "2019",
-    title: "Magna Electro Castings Pvt Ltd",
-    location: "Coimbatore",
-    desc: "Software Developer"
+    year: "2023",
+    title: "Senior Software Engineer",
+    location: "Benzy Infotech Pvt Ltd",
+    desc: "Kochi"
   },
   {
     year: "2021",
-    title: "Benzy Infotech Pvt Ltd",
-    location: "Kochi",
-    desc: "Software Engineer"
+    title: "Software Engineer",
+    location: "Benzy Infotech Pvt Ltd",
+    desc: "Kochi"
   },
   {
- year: "2024",
-   title: "Benzy Infotech Pvt Ltd",
-    location: "Kochi",
-    desc: "Senior Software Engineer"
+    year: "2019",
+    title: "Software Developer",
+    location: "Magna Electro Castings ",
+    desc: "Coimbatore"
+  },
+  {
+    year: "2016",
+    title: "Software Engineer Trainee",
+    location: "Mirrorminds Technology",
+    desc: "Chennai"
   }
+  
 ];
 
 export default function Portfolio() {
@@ -497,7 +505,7 @@ export default function Portfolio() {
             </div>
 
             {/* Card */}
-            <div className="mt-6 text-white p-3 rounded-4xl shadow-lg w-70 text-center hover:shadow-blue-800/50 scale-105 transition bg-gradient-to-r  bg-white/10 via-gray-700 to-gray-800">
+            <div className="mt-6 text-white p-3 rounded-4xl shadow-lg w-55 text-center hover:shadow-blue-800/50 scale-105 transition bg-gradient-to-r  bg-white/10 via-gray-700 to-gray-800">
               <h3 className="font-bold">{item.year}</h3>
               <p className="">{item.title}</p>
               <p className="">{item.location}</p>
