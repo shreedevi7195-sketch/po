@@ -44,16 +44,26 @@ const projects = [
   },
   {
     title: "Akbar Travels - Admin",
-    desc: "Admin panel with role-based access & reports.",
-    live: "https://www.b2badmin.akbartravels.com/",
+    desc: "Panel with role-based access & reports.",
+    live: "https://www.aeb2badmin.akbartravels.com/",
     img: "/images/Admin.png",
     tech: ["MVC C#", "VB.Net", "Rest API's", "Githab", "Jira", "MySql", "Bootstrap", "Two Factor Auth", "AWS", "HTML", "CSS", "Console Applications", "Desktop Applications"],
     featured: false,
     excludefeatured: true,
   },
   {
-    title: "Magna Electro Castings",
-    desc: "Corporate website with internal modules.",
+    title: "Holiday Planning",
+    desc: "platform to plan the holidays",
+    live: "https://www.akbartravels.com/sa/holidays/",
+    img: "/images/holidays.jpg",
+    tech: ["TailwindCSS", "Node", "API", "Github", "Jira", "MySql", "Express", "React", "JWT Auth", "Dockers", "AWS", "Kubernets", "HTML", "CSS"],
+    featured: true,
+    excludefeatured: true,
+  },
+  
+  {
+    title: "Magna Electro Castings Limited",
+    desc: "Ferrous machined castings Manufacturing.",
     live: "https://www.magnacast.com/",
     img: "/images/magna.jpg",
     tech: ["React", "Rest API", "Gitlab", "Bootstrap", "TwoFactor Auth", "AWS", "SQL", "MongoDB", "HTML", "CSS", "Console Applications", "Desktop Applications", "Asp.Net C#", "Javascript", "Ajax"],
@@ -61,18 +71,45 @@ const projects = [
     excludefeatured: true,
   },
   {
-    title: "Samrajyaa",
-    desc: "Corporate website with internal modules.",
-    live: "https://www.samrajyaa.com/",
-    img: "/images/Magna1.jpg",
+    title: "Magna Digitech India LLP",
+    desc: "Prominent 3D sand printing and rapid prototyping.",
+    live: "https://www.magnadigi.tech/",
+    img: "/images/Digitech.jpg",
     tech: ["React", "Rest API", "Gitlab", "Bootstrap", "TwoFactor Auth", "AWS", "SQL", "MongoDB", "HTML", "CSS", "Console Applications", "Desktop Applications", "Asp.Net C#", "Javascript", "Ajax"],
     featured: false,
     excludefeatured: true,
   },
   {
+    title: "Samrajyaa and Company",
+    desc: "Casting Manufacturer and operates as a CNC machining unit serving sectors like automobiles.",
+    live: "https://www.samrajyaa.com/",
+    img: "/images/Samrajyaa.jpg",
+    tech: ["React", "Rest API", "Gitlab", "Bootstrap", "TwoFactor Auth", "AWS", "SQL", "MongoDB", "HTML", "CSS", "Console Applications", "Desktop Applications", "Asp.Net C#", "Javascript", "Ajax"],
+    featured: false,
+    excludefeatured: true,
+  },
+  {
+    title: "Magna - Admin",
+    desc: "Panel with role-based access & reports.",
+    live: "https://www.mecl.online/",
+    img: "/images/Admin.png",
+    tech: ["MVC C#", "VB.Net", "Rest API's", "Githab", "Jira", "MySql", "Bootstrap", "Two Factor Auth", "AWS", "HTML", "CSS", "Console Applications", "Desktop Applications"],
+    featured: false,
+    excludefeatured: true,
+  },
+  {
+    title: "Art of Clubbing",
+    desc: "Party planning digital platform",
+    live: "http://www.artofclubbing.com/",
+    img: "/images/artofclubbing.jpg",
+    tech: ["HTML", "CSS", "Asp.Net c# and vb.net", "Javascript", "Ajax", "Responsive UI", "Gitlab", "MySql", "Bootstrap", "Two Factor Auth"],
+    featured: false,
+    excludefeatured: true,
+  },
+  {
     title: "Manoj Homes",
-    desc: "Real estate website with property listings.",
-    live: "http://www.manojhomes.com/",
+    desc: "House construction and interior design.",
+    live: "https://manojbuilders.com/",
     img: "/images/Manojhomes.jpg",
     tech: ["HTML", "CSS", "Asp.Net c# and vb.net", "Javascript", "Ajax", "Responsive UI", "Gitlab", "MySql", "Bootstrap", "Two Factor Auth"],
     featured: false,
@@ -81,21 +118,105 @@ const projects = [
   {
     title: "Sapil Perfumes",
     desc: "Product showcase e-commerce website.",
-    live: "http://sapil.org/",
+    live: "https://sapil.com/",
     img: "/images/Sapil.png",
     tech: ["HTML", "CSS", "Asp.Net c# and vb.net", "Javascript", "Ajax", "Responsive UI", "Gitlab", "MySql", "Bootstrap", "Two Factor Auth"],
     featured: false,
     excludefeatured: true,
   },
   {
+    title: "VR Galaxy",
+    desc: " Virtual Reality Entertainment Service.",
+    live: "http://www.vrgalaxy.in/",
+    img: "/images/vrgalaxy.jpg",
+    tech: ["HTML", "CSS", "Asp.Net c# and vb.net", "Javascript", "Ajax", "Responsive UI", "Gitlab", "MySql", "Bootstrap", "Two Factor Auth"],
+    featured: false,
+    excludefeatured: true,
+  },
+  {
+    title: "Fubsy",
+    desc: "Pet Care Products showcase website",
+    // live: "https://fuzzywuzzy.in/",
+    img: "/images/fubsy.png",
+    tech: ["HTML", "CSS", "Asp.Net c# and vb.net", "Javascript", "Ajax", "Responsive UI", "Gitlab", "MySql", "Bootstrap", "Two Factor Auth"],
+    featured: false,
+    excludefeatured: true,
+  },  
+  {
     title: "Dental Avenue",
-    desc: "Healthcare service website.",
+    desc: "Healthcare Service.",
     live: "http://www.thedentalavenue.com/",
     img: "/images/Dental.jpg",
     tech: ["HTML", "CSS", "Asp.Net c# and vb.net", "Javascript", "Ajax", "Responsive UI", "Gitlab", "MySql", "Bootstrap", "Two Factor Auth"],
     featured: false,
     excludefeatured: true,
   },
+  
+  {
+    title: "Menorah PM India",
+    desc: "HR consulting firm.",
+    live: "http://www.menorahpm.com/",
+    img: "/images/menorahpm.jpg",
+    tech: ["HTML", "CSS", "Asp.Net c# and vb.net", "Javascript", "Ajax", "Responsive UI", "Gitlab", "MySql", "Bootstrap", "Two Factor Auth"],
+    featured: false,
+    excludefeatured: true,
+  },
+  {
+    title: "MyDay Delivery",
+    desc: "Product Delivery website",
+    // live: "https://bubblez.co.in/",
+    img: "/images/mydaydelivery.jpeg",
+    tech: ["HTML", "CSS", "Asp.Net c# and vb.net", "Javascript", "Ajax", "Responsive UI", "Gitlab", "MySql", "Bootstrap", "Two Factor Auth"],
+    featured: false,
+    excludefeatured: true,
+  },
+  {
+    title: "Wedding Book",
+    desc: "Wedding Event Planner Service",
+    // live: "https://bubblez.co.in/",
+    img: "/images/weddingbook.jpg",
+    tech: ["HTML", "CSS", "Asp.Net c# and vb.net", "Javascript", "Ajax", "Responsive UI", "Gitlab", "MySql", "Bootstrap", "Two Factor Auth"],
+    featured: false,
+    excludefeatured: true,
+  },
+  
+  {
+    title: "SixthStar Technologies ",
+    desc: "IT and web hosting providers",
+    live: "https://sixthstartech.com/",
+    img: "/images/sixthstar.jpg",
+    tech: ["HTML", "CSS", "Asp.Net c# and vb.net", "Javascript", "Ajax", "Responsive UI", "Gitlab", "MySql", "Bootstrap", "Two Factor Auth"],
+    featured: false,
+    excludefeatured: true,
+  },
+  {
+    title: "My Air Talk",
+    desc: "Recharge - Service",
+    // live: "https://bubblez.co.in/",
+    img: "/images/myairtalk.png",
+    tech: ["HTML", "CSS", "Asp.Net c# and vb.net", "Javascript", "Ajax", "Responsive UI", "Gitlab", "MySql", "Bootstrap", "Two Factor Auth"],
+    featured: false,
+    excludefeatured: true,
+  },
+  {
+    title: "Bubblez",
+    desc: "Personal Care Products website",
+    live: "https://bubblez.co.in/",
+    img: "/images/bubblez.jpg",
+    tech: ["HTML", "CSS", "Asp.Net c# and vb.net", "Javascript", "Ajax", "Responsive UI", "Gitlab", "MySql", "Bootstrap", "Two Factor Auth"],
+    featured: false,
+    excludefeatured: true,
+  },
+   {
+    title: "Mirror Minds - Admin",
+    desc: "Project based Admin Websites.",
+    // live: "https://www.mecl.online/",
+    img: "/images/Admin.png",
+    tech: ["MVC C#", "VB.Net", "Rest API's", "Githab", "Jira", "MySql", "Bootstrap", "Two Factor Auth", "AWS", "HTML", "CSS", "Console Applications", "Desktop Applications"],
+    featured: false,
+    excludefeatured: true,
+  },
+  
 ];
 
 const fadeIn = {
@@ -319,7 +440,7 @@ export default function Portfolio() {
             Hi, 👋  I'm Sridevi - {text}
           </motion.h2>
 
-          <motion.p initial="hidden" animate="visible" variants={fadeIn} className="mt-4 text-left">
+          <motion.p initial="hidden" animate="visible" variants={fadeIn} className="mt-4 text-center p-4">
             Senior Full Stack Developer with 9+ years of experience in designing, developing, and maintaining scalable web
             applications. Skilled in implementing role-based authentication systems, building admin portals,
             developing online booking platforms,cms websites and troubleshooting production issues to ensure application
@@ -381,18 +502,18 @@ export default function Portfolio() {
         {/* All Projects */}
         <section id="projects" className="text-center p-5 py-5 text-black">
           <h2 className="text-3xl font-bold mb-4 text-white">Projects</h2>
-          <div className="grid md:grid-cols-5 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {exceptfeatured.map((p, i) => (
               <motion.div key={i} initial="hidden" whileInView="visible" variants={fadeIn} whileHover={{ scale: 1.05 }}
                 className="bg-white rounded-xl shadow overflow-hidden">
                 {/* <img src={p.img} alt="project" className="w-full h-40 object-cover" /> */}
                 <div className="relative group">
-                  <img src={p.img} alt="project" className="w-full h-30 object-cover" />
-                  <div className="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
-                    <span className="text-white font-bold">
-                      <a href={p.live} target="_blank">
-                        View Live</a></span>
-                  </div>
+                  <img src={p.img} alt="project" className="w-full h-35 object-cover" />
+                  { p.live && <div className="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+                    <span className="text-white font-bold">                      
+                       <a href={p.live} target="_blank"> View Live</a>  
+                    </span>
+                  </div> }
                 </div>
                 <div className="p-4">
                   <h3 className="font-bold">{p.title}</h3>
