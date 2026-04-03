@@ -417,7 +417,7 @@ export default function Portfolio() {
           <a href="https://github.com/shreedevi7195-sketch" target="_blank" rel="noreferrer">
             <FaGithub className="hover:scale-110 transition" />
           </a>
-          <a href="https://www.linkedin.com/sridevi-thangarasu" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/sridevi-thangarasu/" target="_blank" rel="noreferrer">
             <FaLinkedin className="hover:scale-110 transition text-blue-600" />
           </a>
           <a href="mailto:shreedevi7195@gmail.com">
