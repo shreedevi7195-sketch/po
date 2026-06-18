@@ -533,9 +533,9 @@ export default function Portfolio() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               { title: "Frontend", skills: ["HTML5", "CSS3", "Bootstrap", "Tailwindcss", "JavaScript (ES6+)", "React.js", "Redux Toolkit"] },
-              { title: "Backend", skills: ["Node.js", "Express.js", "ASP.NET C# & Vb.Net", ".Net Core Framework", "MVC Framework", "REST API", "Micro Services", "JWT Auth"] },
+              { title: "Backend", skills: ["Node.js", "Express.js", ".Net Core Frameworks","ASP.NET C# & Vb.Net, MVC","REST API's and Micro Services","Dependency Injection","Event Driven Architecture","SOLID Principles","Design Patterns","JWT Auth"] },
               { title: "Database", skills: ["SQL", "Mysql", "Mongoose"] },
-              { title: "Deployment & Other Skills", skills: ["GitLab and GitHub", "Agile Scrum and Jira", "AWS(EC2/S3/RDS)","Dockers","Kubernates","Postman", "Schedulers", "ConsoleApps"] }
+              { title: "Deployment & Other Skills", skills: ["GitLab and GitHub", "Agile Scrum and Jira", "AWS(EC2/S3/RDS)","Dockers","Kubernetes","Postman", "Schedulers", "ConsoleApps"] }
             ].map((category, i) => (
               <div key={i} className="bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-white transition duration-300 hover:scale-105">
                 <h3 className="font-semibold mb-4 text-white">{category.title}</h3>
@@ -549,15 +549,18 @@ export default function Portfolio() {
                       {skill.includes("Bootstrap") && "🅱️"} {skill.includes("Redux") && "🌀"}
 
                       {/* Backend */}
-                      {skill.includes("Node") && "🟢"} {skill.includes("Express") && "🚂"} {skill.includes("ASP") && "🧩"} {skill.includes("VB") && "🔷"}
-                      {skill.includes("MVC") && "🏗️"} {skill.includes("API") && "🔗"} {skill.includes("JWT") && "🔐"} {skill.includes("PHP") && "🐘"}
-
+                      {skill.includes("Node") && "🟢"} {skill.includes("Express") && "🚂"}
+                      {skill.includes(".Net") && "🔷"} {skill.includes("API") && "🔗"} {skill.includes("JWT") && "🔐"} {skill.includes("PHP") && "🐘"}
+                      {skill.includes("Event Driven Architecture") && "📡"}
+                      {skill.includes("SOLID Principles") && "🧱"}{skill.includes("Design Patterns") && "🏗️"}
+                      {skill.includes("Dependency Injection") && "🔌"}
                       {/* Database */}
                       {skill.includes("SQL") && "🗄️"} {skill.includes("Mysql") && "🐬"} {skill.includes("Mongoose") && "🍃"}
 
                       {/* Tools */}
                       {skill.includes("GitHub") && "🐙"} {skill.includes("Jira") && "📋"} {skill.includes("AWS") && "☁️"}
                       {skill.includes("Postman") && "📮"} {skill.includes("Schedulers") && "⏰"} {skill.includes("Console") && "💻"}{skill.includes("Desktop") && "🖥️"}
+                      {skill.includes("Docker") && "🐳"} {skill.includes("Kubernetes") && "☸️"}
                     </span>
 
                     <p className="text-sm text-gray-300 group-hover:text-white transition">
