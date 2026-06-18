@@ -532,10 +532,10 @@ export default function Portfolio() {
           {/* Responsive Grid: 2 cols mobile, 4 cols desktop */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { title: "Frontend", skills: ["HTML5", "CSS3", "Bootstrap", "Tailwindcss", "JavaScript (ES6+)", "React.js", "Redux Toolkit"] },
-              { title: "Backend", skills: ["Node.js", "Express.js", ".Net Core Frameworks","ASP.NET C# & Vb.Net, MVC","REST API's and Micro Services","Dependency Injection","Event Driven Architecture","SOLID Principles","Design Patterns","JWT Auth"] },
-              { title: "Database", skills: ["SQL", "Mysql", "Mongoose"] },
-              { title: "Deployment & Other Skills", skills: ["GitLab and GitHub", "Agile Scrum and Jira", "AWS(EC2/S3/RDS)","Dockers","Kubernetes","Postman", "Schedulers", "ConsoleApps"] }
+              { title: "Frontend", skills: ["HTML5", "CSS3", "Bootstrap", "Tailwindcss", "JavaScript (ES6+)", "React.js", "Redux Toolkit","React Router","Responsive Web Design"] },
+              { title: "Backend", skills: ["Node.js & Express.js", ".Net Core Frameworks","ASP.NET C# & Vb.Net, MVC","REST API's and Micro Services","Dependency Injection","Event Driven Architecture","SOLID Principles","Design Patterns","JWT Auth"] },
+              { title: "Database", skills: ["SQL", "Mysql", "Mongoose","Redis","Stored Procedures","Indexing & Query Optimization","Views, Triggers, and Functions","CTEs and Window Functions","LINQ & Entity Framework Core"] },
+              { title: "Deployment & Other Skills", skills: ["GitLab and GitHub", "Agile Scrum and Jira", "AWS(EC2/S3/RDS)","CI/CD Pipelines","Dockers","Kubernetes","Postman", "Schedulers", "ConsoleApps"] }
             ].map((category, i) => (
               <div key={i} className="bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-white transition duration-300 hover:scale-105">
                 <h3 className="font-semibold mb-4 text-white">{category.title}</h3>
@@ -545,20 +545,27 @@ export default function Portfolio() {
                     <span className="text-lg group-hover:scale-125 transition">
                       {/* Frontend */}
                       {skill.includes("HTML") && "🌐"} {skill.includes("CSS") && "🎨"}{skill.includes("JavaScript") && "🟨"}
-                      {skill.includes("React") && "⚛️"} {skill.includes("Tailwind") && "💨"}
+                      {skill.includes("React.js") && "⚛️"} {skill.includes("Tailwind") && "💨"}
                       {skill.includes("Bootstrap") && "🅱️"} {skill.includes("Redux") && "🌀"}
+                       {skill.includes("Responsive Web Design") && "📱"} 
+                       {skill.includes("React Router") && "🧭"} 
 
                       {/* Backend */}
-                      {skill.includes("Node") && "🟢"} {skill.includes("Express") && "🚂"}
+                      {skill.includes("Node.js") && "🟢"} 
                       {skill.includes(".Net") && "🔷"} {skill.includes("API") && "🔗"} {skill.includes("JWT") && "🔐"} {skill.includes("PHP") && "🐘"}
                       {skill.includes("Event Driven Architecture") && "📡"}
                       {skill.includes("SOLID Principles") && "🧱"}{skill.includes("Design Patterns") && "🏗️"}
                       {skill.includes("Dependency Injection") && "🔌"}
                       {/* Database */}
                       {skill.includes("SQL") && "🗄️"} {skill.includes("Mysql") && "🐬"} {skill.includes("Mongoose") && "🍃"}
+                      {skill.includes("Redis") && "⚡"} {skill.includes("Indexing") && "📇"}
+                      {skill.includes("Database Design") && "📊"} {skill.includes("Stored Procedures") && "📜"}
+                      {skill.includes("Transactions & ACID") && "🔒"} {skill.includes("Entity Framework Core") && "🔗"}
+                      {skill.includes("CTEs") && "📈"} {skill.includes("Views") && "🧮"} 
 
                       {/* Tools */}
                       {skill.includes("GitHub") && "🐙"} {skill.includes("Jira") && "📋"} {skill.includes("AWS") && "☁️"}
+                      {skill.includes("CI/CD") && "🔄"} 
                       {skill.includes("Postman") && "📮"} {skill.includes("Schedulers") && "⏰"} {skill.includes("Console") && "💻"}{skill.includes("Desktop") && "🖥️"}
                       {skill.includes("Docker") && "🐳"} {skill.includes("Kubernetes") && "☸️"}
                     </span>
