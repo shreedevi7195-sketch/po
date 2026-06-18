@@ -533,9 +533,9 @@ export default function Portfolio() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               { title: "Frontend", skills: ["HTML5", "CSS3", "Bootstrap", "Tailwindcss", "JavaScript (ES6+)", "React.js", "Redux Toolkit"] },
-              { title: "Backend", skills: ["Node.js", "Express.js", "ASP.NET C#", "VB.NET", "MVC", "REST API", "PHP", "JWT Auth"] },
+              { title: "Backend", skills: ["Node.js", "Express.js", "ASP.NET C# & Vb.Net", ".Net Core Framework", "MVC Framework", "REST API", "Micro Services", "JWT Auth"] },
               { title: "Database", skills: ["SQL", "Mysql", "Mongoose"] },
-              { title: "Tools", skills: ["GitHub", "Jira", "AWS", "Postman", "Schedulers", "ConsoleApps"] }
+              { title: "Deployment & Other Skills", skills: ["GitLab and GitHub", "Agile Scrum and Jira", "AWS(EC2/S3/RDS)","Dockers","Kubernates","Postman", "Schedulers", "ConsoleApps"] }
             ].map((category, i) => (
               <div key={i} className="bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-white transition duration-300 hover:scale-105">
                 <h3 className="font-semibold mb-4 text-white">{category.title}</h3>
