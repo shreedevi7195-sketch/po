@@ -476,7 +476,7 @@ export default function Portfolio() {
           </motion.h2>
 
           <motion.p initial="hidden" animate="visible" variants={fadeIn} className="mt-4 text-center p-4">
-            Software Developer with 9+ years of experience in designing, developing, and maintaining scalable web
+            Software Developer with 6+ years of experience in designing, developing, and maintaining scalable web
             applications. Skilled in implementing role-based authentication systems, building admin portals,
             developing online booking platforms,cms websites and troubleshooting production issues to ensure application
             reliability and performance.
