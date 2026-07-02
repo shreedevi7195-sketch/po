@@ -252,8 +252,8 @@ const milestones = [
   },
   {
     year: "2016",
-    title: "Software Engineer Trainee",
-    location: "Mirrorminds Technology",
+    title: "UPSC Preparation",
+    location: "Civil Services Examination",
     desc: "Chennai"
   }
   
